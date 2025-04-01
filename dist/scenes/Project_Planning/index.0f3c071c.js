@@ -1,0 +1,1 @@
+document.querySelector("#refresh").addEventListener("click",function(){var e=document.querySelector("#app"),r=e.cloneNode(!0);e.parentNode.replaceChild(r,e)}),document.querySelector("#restart").addEventListener("click",function(){var e=document.querySelector("#appy"),r=e.cloneNode(!0);e.parentNode.replaceChild(r,appy)});

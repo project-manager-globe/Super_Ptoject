@@ -1,0 +1,1559 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 18px;
+}
+
+
+body {
+	background-image: url("https://transparenttextures.com/patterns/scribble-light.png");
+	width: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+	margin: 0;
+	--color-text: #111;
+    --color-text-labs:#00D47E;
+	--color-text-alt: #c1c1c3;
+	--color-bg: #F9FAFE;
+	--color-link: #111;
+	--color-link-hover: #111;
+	--color-page: #F1F3F8;
+	--color-info: #c0c0c2;
+	color: var(--color-text);
+	background-color: white;
+	font-family: niveau-grotesk, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	counter-reset: section;
+	--cursor-stroke: none; 
+	--cursor-fill: #00D47E;
+	--cursor-stroke-width: 1px; 
+	--margin-images: 50px;
+}
+
+a:visited{
+    font-family:Arial, Helvetica, sans-serif; 
+    text-decoration: none;
+}
+
+
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+}
+
+.js .loading::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5, 0.5, 1);
+	}
+}
+
+
+.HOW{
+	color: #005AFC;
+	font-family: "Sora", sans-serif;
+	font-weight: 400;
+
+}
+
+.intro {
+	font-family: "Sora", sans-serif;
+	font-weight: 600;
+    padding-right: 50vw;
+
+	position: relative;
+	font-size: 2.778rem;
+	color: #161617;
+}
+
+.intro2 {
+	font-family: "Sora", sans-serif;
+	font-weight: 400;
+	padding-left: 5vw;
+	margin-bottom: 20px;
+	position: relative;
+	font-size: 1.5rem;
+	color: #070707;
+}
+
+.intro3 {
+	font-family: "Sora", sans-serif;
+	font-weight: 400;
+	padding-left: 5vw;
+	margin-bottom: 20px;
+	position: relative;
+	font-size: 1.2rem;
+	color: #2d2d2f;
+}
+
+/* --------------------------- NAVBAR ---------------------------------*/
+.bgimg {
+
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+
+.topleft {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+  
+
+  
+  .middle {
+	position: inherit;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+  }
+
+  .sideTable{
+	font-size: large;
+	text-decoration: solid;
+	margin-bottom: 15%;
+  }
+
+.navbar {
+    border:none;
+    border-radius:0;
+    margin:0px;
+    background: #f1fdff;
+    box-shadow: 0px 7px 21px -12px rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Footer
+ * 
+ */
+ .wh_footer{
+    text-align: center;
+    padding: 0.5em;
+	font-size: 10px;
+	
+}
+
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+.myTopButton{
+	color: rgb(109, 136, 187);
+    padding-right: 20px;
+    font-size:22px;
+    cursor:pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  
+}
+
+.myTopButton:hover{
+    color: #0137FB;
+	font-weight: 600;
+  
+}
+
+
+.login:hover{
+	font-size:25px;
+	color: #FF6700;
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+/* ----------------------------- Deleted from Navbar to here, moved to styles.css -------*/
+
+/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus {
+	/* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+	outline: none;
+	background: lightgrey;
+}
+
+a:focus:not(:focus-visible) {
+	/* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+	background: transparent;
+}
+
+a:focus-visible {
+	/* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+	outline: 2px solid ;
+	background: transparent;
+}
+
+.cursor { 
+	display: none; 
+}
+
+.page {
+    padding: 3rem 5vw;
+	text-align:center;
+	position: absolute;
+	display: flex;
+	background: var(--color-page);
+	
+}
+
+.page__title {
+	font-size: 1.2rem;
+	margin: 0 0 1rem;
+	font-weight:normal;
+	
+}
+
+.page__links a {
+	margin: 0 0.5rem;
+   
+}
+
+
+.page__addon {
+	margin: 0.5rem ;
+}
+
+.content  {
+	margin-top: 80px;
+	max-width: 70%;
+	
+}
+
+.content  .content--sponsor {
+	position: relative;
+	display: grid;
+	grid-template-areas: 'sponsor';
+	grid-template-rows: 100%;
+	grid-template-columns: 100%;
+	text-align: center;
+	padding: 5vh 0;
+	align-items: end;
+    justify-items: center;
+}
+
+.content__title {
+	font-family: "Sora", sans-serif;
+	font-weight: 600;
+	margin-left: 110px;
+	position: relative;
+	font-size: 2.778rem;
+	color: #0137FB;
+}
+
+
+
+.content__title--sponsor {
+	grid-area: sponsor;
+	font-size: 9vw;
+	line-height: 0.7;
+	color: var(--color-page);
+	font-weight: 100;
+	padding-bottom: 17vw;
+}
+
+.content__title--sponsor strong {
+	display: block;
+	font-size: 14vw;
+	font-weight: 400;
+}
+
+.content__subtitle {
+	margin-left: 110px;
+	align-self: end;
+    font-size:larger;
+	padding: 0.2rem 0 0 1.5rem;
+}
+
+.content__foot {
+	text-align: center;
+	color: var(--color-info);
+}
+
+.frame {
+	grid-area: sponsor;
+	width: 30vw;
+	min-width: 200px;
+	max-width: 300px;
+	background: var(--color-page);
+	padding: 5rem 2rem;
+}
+
+.panel {
+	margin: 2rem auto;
+}
+
+.js .panel {
+	width: calc(100% - 7rem);
+	display: grid;
+	grid-template-areas: 'item';
+}
+
+.panel__item {
+	position: relative;
+	grid-area: item;
+	width: 100%;
+	display: grid;
+	grid-gap: 4rem;
+	grid-template-columns: auto minmax(1fr) auto;
+	grid-template-areas: 'image title title'
+		'image title title'
+		'subtitle subtitle subtitle'
+		'... ... close';
+	grid-template-rows: fr auto auto auto;
+	
+}
+
+.no-js .panel__item {
+	margin: 3rem 0 5rem 0;
+	grid-template-areas: 'image title title'
+		'image title title'
+		'subtitle subtitle subtitle';
+}
+
+.js .panel__item {
+	pointer-events: none;
+	margin-left: 20%;
+}
+
+.panel__item-imgwrap {
+	grid-area: image;
+	position: relative;
+	border-radius: 0.35rem;
+	overflow: hidden;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	align-self: start;
+	width:fit-content;
+	align-items: flex-start;
+	gap: 40px;
+	
+}
+
+.js .panel__item-imgwrap {
+	cursor: none;
+	pointer-events: auto;
+	will-change: transform, opacity;
+}
+
+.panel__item-img {
+	position: relative;
+	width: 80vw;
+	height: auto;
+	max-width: 360px;
+	display: block;
+
+	
+}
+
+.panel__item-title {
+	grid-area: title;
+	font-size: 5vw;
+	margin-left: 20px;
+	line-height: 0.65;
+	font-family: ivypresto-display, serif;
+	font-weight: 100;
+}
+
+.panel__item-title span {
+	display: inline-block;
+	padding-bottom: 2.85vw;
+    font-weight: 200;
+	will-change: transform, opacity;
+	padding-left: 25px;
+}
+
+.panel__item-title span:first-child {
+	font-weight: 500;
+    color: #00D47E;
+	padding-left:0;
+
+}
+
+
+
+.panel__item-title span:last-child {
+	font-weight: 400;
+	text-indent: 3vw;
+	display: block;
+	padding-left: 40px;
+	padding-bottom: 0;
+}
+
+
+.panel__item-subtitle h4 {
+	position: relative;
+	margin: 0, 0, 2px, 0; 
+	font-weight: normal;
+	font-size: 3rem;
+	font-size: clamp(1rem,2vw,0.5rem);
+}
+
+.panel__item-subtitle h4 span.char {
+	will-change: transform, opacity;
+}
+
+.panel__item-close {
+	grid-area: close;
+	border: 0;
+	padding: 70px, 50px, 50px, 0;
+	margin: 0;
+	position: relative;
+	background: none;
+	cursor: none;
+	align-self: end;
+}
+
+.no-js .panel__item-close {
+	display: none;
+}
+
+.panel__item-close:focus {
+	outline: none;
+}
+
+/*---------------------------   Buttons --------------------------------*/
+
+
+.myButton {
+    grid-area:close;
+    position: relative;
+    cursor: none;
+	align-self: end;
+	border-radius:3px;
+	font-family:niveau-grotesk, sans-serif;
+	font-size:35px;
+	font-weight:bold;
+    color: #00D47E;
+	padding: 4px 8px;
+	text-decoration:none;
+}
+
+.myButton:hover {
+	background-color:#ffffff;
+    font-size:40px;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+/*--------------- Globe Orange ------------*/
+.myButton2 {
+	grid-area:close;
+    position: relative;
+    cursor: none;
+	align-self: end;
+	border-radius:3px;
+	font-family:niveau-grotesk, sans-serif;
+	font-size:35px;
+	font-weight:bold;
+    color: #FF6700;
+	padding: 4px 6px;
+	text-decoration:none;
+    
+
+}
+
+.myButton2:hover {
+	background-color:#ffffff;
+    font-size:40px;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+/*--------------- Globe Blue ------------*/
+.myButton3 {
+    grid-area:close;
+    position: relative;
+    cursor: none;
+	align-self: end;
+	border-radius:3px;
+	font-family:niveau-grotesk, sans-serif;
+	font-size:35px;
+	font-weight:bold;
+    color: #005AFC;
+	padding: 4px 8px;
+	text-decoration:none;
+    
+
+}
+
+.myButton3:hover {
+	background-color:#ffffff;
+    font-size:40px;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+
+
+/*--------------- Red Button ------------*/
+.myButton4 {
+    grid-area:close;
+    position: relative;
+    cursor: none;
+	align-self: end;
+	border-radius:3px;
+	font-family:niveau-grotesk, sans-serif;
+	font-size:35px;
+	font-weight:bold;
+    color: #c70c12;
+	padding: 4px 8px;
+	text-decoration:none;
+    
+
+}
+
+
+/*--------------- Yellow Button ------------*/
+.myButton5 {
+    grid-area:close;
+    position: relative;
+    cursor: none;
+	align-self: end;
+	border-radius:3px;
+	font-family:niveau-grotesk, sans-serif;
+	font-size:35px;
+	font-weight:bold;
+    color: #fdc806;
+	padding: 4px 8px;
+	text-decoration:none;
+    
+
+}
+
+.myButton3:hover {
+	background-color:#ffffff;
+    font-size:40px;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+/*---------------------- Button End --------------------*/
+
+@media only screen and (max-width: 767px) {
+    .wh_tile > div{
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 760px) {
+	
+	.panel__item {
+		grid-gap: 1rem;
+		grid-template-columns: auto minmax(0,1fr) auto;
+		grid-template-areas: 'image title title'
+			'image subtitle close';
+		grid-template-rows: 1fr auto;
+	}
+	
+	.no-js .panel__item {
+		margin: 0 0 5rem 0;
+		grid-template-areas: 'image title title'
+			'image subtitle subtitle';
+	}
+}
+
+@media screen and (min-width: 1170px) {
+	.panel__item {
+		grid-template-columns: auto minmax(0,1fr) 80px;
+		grid-template-areas: 'image title close'
+			'image subtitle close';
+		grid-template-rows: 1fr auto;
+	}
+
+	.panel__item-close {
+		align-self: unset;
+	}
+
+	.panel__item-close span {
+		display: none;
+	}
+
+	.panel__item-close::before,
+	.panel__item-close::after {
+		content: '';
+		width: 1px;
+		height: 60%;
+		background: currentColor;
+		position: absolute;
+		transform-origin: 50% 50%;
+		left: 70%;
+		top: 0;
+		transform: scale(1.15) rotate(32deg);
+	}
+
+	.panel__item-close::after {
+		transform: scale(1.15) rotate(-32deg);
+	}
+}
+
+.js .panel__item-title>*,
+.js .panel__item-subtitle>*,
+.js .panel__item-close {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.js .panel__item--open .panel__item-title>*,
+.js .panel__item--open .panel__item-subtitle>*,
+.js .panel__item--open .panel__item-close {
+	pointer-events: auto;
+}
+
+.js .panel__item--open {
+	z-index: 1000;
+}
+
+@media screen and (min-width: 767) {
+	.myTopButton{
+		text-align: right;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		max-width: calc(1450px - 4rem);
+		grid-template-columns: 95% 6% 5% 5%;
+		grid-template-rows: auto;
+		grid-template-areas: 'title links addon';
+	}
+
+
+
+	.page--header {
+	margin-bottom: 0px;
+    width: 100vw;
+    position: relative;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    background: var(--color-page);
+	backdrop-filter: blur(30px);
+    top:0;
+    z-index: 1;
+	}
+
+	.page--footer {
+		padding: 6rem 4rem 1.5rem;
+		border-radius: 8px 8px 0 0;
+		margin: 5vh auto 0;
+	}
+
+	.page__title {
+		grid-area: title;
+		margin: 0;
+	}
+
+	.page__links {
+		grid-area: links;
+		padding: 0;
+		justify-self: end;
+		align-self: end;
+	}
+
+
+	.page__addon {
+		margin: 0;
+		grid-area: addon;
+		justify-self: end;
+	}
+}
+
+@media (any-pointer:fine) {
+	.cursor {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: block;
+		pointer-events: none;
+		z-index: 1001;
+	}
+
+	.cursor__inner {
+		fill: var(--cursor-fill);
+		stroke: var(--cursor-stroke);
+		stroke-width: var(--cursor-stroke-width);
+		opacity: 0.7;
+	}
+
+	.no-js .cursor {
+		display: none;
+	}
+
+}
+
+
+
+/* ------------------------------------  Dealerships Container ---------------------------*/
+
+.dealerships-logos-container {
+    align-self: start;
+	width:93vw;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+
+.dealerships-logos-container .logo {
+
+    display: flex;
+    overflow: hidden;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 10.9rem;
+    height: 10.9rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: .3rem;
+    border: 2px solid #b5b5b8;
+    border-radius: 5%;
+    background-color: #fff;
+}
+
+.logo:hover {
+	box-shadow:0.5rem  0.3rem 0.5rem rgba(55, 54, 54, 0.3);
+}
+
+.unitRow{
+	padding-left: 30px;
+}
+
+.unitTop{
+	padding-left: 30px;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 18px;
+}
+
+
+body {
+	background-image: url("https://transparenttextures.com/patterns/scribble-light.png");
+	width: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+	margin: 0;
+	--color-text: #111;
+    --color-text-labs:#00D47E;
+	--color-text-alt: #c1c1c3;
+	--color-bg: #F9FAFE;
+	--color-link: #111;
+	--color-link-hover: #111;
+	--color-page: #F1F3F8;
+	--color-info: #c0c0c2;
+	color: var(--color-text);
+	background-color: white;
+	font-family: niveau-grotesk, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	counter-reset: section;
+	--cursor-stroke: none; 
+	--cursor-fill: #00D47E;
+	--cursor-stroke-width: 1px; 
+	--margin-images: 50px;
+}
+
+a:visited{
+    font-family:Arial, Helvetica, sans-serif; 
+    text-decoration: none;
+}
+
+
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+}
+
+.js .loading::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5, 0.5, 1);
+	}
+}
+
+
+.HOW{
+	color: #005AFC;
+	font-family: "Sora", sans-serif;
+	font-weight: 400;
+
+}
+
+.intro {
+	font-family: "Sora", sans-serif;
+	font-weight: 600;
+    padding-right: 50vw;
+
+	position: relative;
+	font-size: 2.778rem;
+	color: #161617;
+}
+
+.intro2 {
+	font-family: "Sora", sans-serif;
+	font-weight: 400;
+	padding-left: 5vw;
+	margin-bottom: 20px;
+	position: relative;
+	font-size: 1.5rem;
+	color: #070707;
+}
+
+.intro3 {
+	font-family: "Sora", sans-serif;
+	font-weight: 400;
+	padding-left: 5vw;
+	margin-bottom: 20px;
+	position: relative;
+	font-size: 1.2rem;
+	color: #2d2d2f;
+}
+
+/* --------------------------- NAVBAR ---------------------------------*/
+.bgimg {
+
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+
+.topleft {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+  
+
+  
+  .middle {
+	position: inherit;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+  }
+
+  .sideTable{
+	font-size: large;
+	text-decoration: solid;
+	margin-bottom: 15%;
+  }
+
+.navbar {
+    border:none;
+    border-radius:0;
+    margin:0px;
+    background: #f1fdff;
+    box-shadow: 0px 7px 21px -12px rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Footer
+ * 
+ */
+ .wh_footer{
+    text-align: center;
+    padding: 0.5em;
+	font-size: 10px;
+	
+}
+
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+.myTopButton{
+	color: rgb(109, 136, 187);
+    padding-right: 20px;
+    font-size:22px;
+    cursor:pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  
+}
+
+.myTopButton:hover{
+    color: #0137FB;
+	font-weight: 600;
+  
+}
+
+
+.login:hover{
+	font-size:25px;
+	color: #FF6700;
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+/* ----------------------------- Deleted from Navbar to here, moved to styles.css -------*/
+
+/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus {
+	/* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+	outline: none;
+	background: lightgrey;
+}
+
+a:focus:not(:focus-visible) {
+	/* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+	background: transparent;
+}
+
+a:focus-visible {
+	/* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+	outline: 2px solid ;
+	background: transparent;
+}
+
+.cursor { 
+	display: none; 
+}
+
+.page {
+    padding: 3rem 5vw;
+	text-align:center;
+	position: absolute;
+	display: flex;
+	background: var(--color-page);
+	
+}
+
+.page__title {
+	font-size: 1.2rem;
+	margin: 0 0 1rem;
+	font-weight:normal;
+	
+}
+
+.page__links a {
+	margin: 0 0.5rem;
+   
+}
+
+
+.page__addon {
+	margin: 0.5rem ;
+}
+
+.content  {
+	margin-top: 80px;
+	max-width: 70%;
+	
+}
+
+.content  .content--sponsor {
+	position: relative;
+	display: grid;
+	grid-template-areas: 'sponsor';
+	grid-template-rows: 100%;
+	grid-template-columns: 100%;
+	text-align: center;
+	padding: 5vh 0;
+	align-items: end;
+    justify-items: center;
+}
+
+.content__title {
+	font-family: "Sora", sans-serif;
+	font-weight: 600;
+	margin-left: 110px;
+	position: relative;
+	font-size: 2.778rem;
+	color: #0137FB;
+}
+
+
+
+.content__title--sponsor {
+	grid-area: sponsor;
+	font-size: 9vw;
+	line-height: 0.7;
+	color: var(--color-page);
+	font-weight: 100;
+	padding-bottom: 17vw;
+}
+
+.content__title--sponsor strong {
+	display: block;
+	font-size: 14vw;
+	font-weight: 400;
+}
+
+.content__subtitle {
+	margin-left: 110px;
+	align-self: end;
+    font-size:larger;
+	padding: 0.2rem 0 0 1.5rem;
+}
+
+.content__foot {
+	text-align: center;
+	color: var(--color-info);
+}
+
+.frame {
+	grid-area: sponsor;
+	width: 30vw;
+	min-width: 200px;
+	max-width: 300px;
+	background: var(--color-page);
+	padding: 5rem 2rem;
+}
+
+.panel {
+	margin: 2rem auto;
+}
+
+.js .panel {
+	width: calc(100% - 7rem);
+	display: grid;
+	grid-template-areas: 'item';
+}
+
+.panel__item {
+	position: relative;
+	grid-area: item;
+	width: 100%;
+	display: grid;
+	grid-gap: 4rem;
+	grid-template-columns: auto minmax(1fr) auto;
+	grid-template-areas: 'image title title'
+		'image title title'
+		'subtitle subtitle subtitle'
+		'... ... close';
+	grid-template-rows: fr auto auto auto;
+	
+}
+
+.no-js .panel__item {
+	margin: 3rem 0 5rem 0;
+	grid-template-areas: 'image title title'
+		'image title title'
+		'subtitle subtitle subtitle';
+}
+
+.js .panel__item {
+	pointer-events: none;
+	margin-left: 20%;
+}
+
+.panel__item-imgwrap {
+	grid-area: image;
+	position: relative;
+	border-radius: 0.35rem;
+	overflow: hidden;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	align-self: start;
+	width:fit-content;
+	align-items: flex-start;
+	gap: 40px;
+	
+}
+
+.js .panel__item-imgwrap {
+	cursor: none;
+	pointer-events: auto;
+	will-change: transform, opacity;
+}
+
+.panel__item-img {
+	position: relative;
+	width: 60vw;
+	height: auto;
+	max-width: 360px;
+	display: block;
+
+	
+}
+
+.panel__item-title {
+	grid-area: title;
+	font-size: 5vw;
+	margin-left: 20px;
+	line-height: 0.65;
+	font-family: ivypresto-display, serif;
+	font-weight: 100;
+}
+
+.panel__item-title span {
+	display: inline-block;
+	padding-bottom: 2.85vw;
+    font-weight: 200;
+	will-change: transform, opacity;
+	padding-left: 25px;
+}
+
+.panel__item-title span:first-child {
+	font-weight: 500;
+    color: #00D47E;
+	padding-left:0;
+
+}
+
+
+
+.panel__item-title span:last-child {
+	font-weight: 400;
+	text-indent: 3vw;
+	display: block;
+	padding-left: 40px;
+	padding-bottom: 0;
+}
+
+
+.panel__item-subtitle h4 {
+	position: relative;
+	margin: 0, 0, 2px, 0; 
+	font-weight: normal;
+	font-size: 3rem;
+	font-size: clamp(1rem,2vw,0.5rem);
+}
+
+.panel__item-subtitle h4 span.char {
+	will-change: transform, opacity;
+}
+
+.panel__item-close {
+	grid-area: close;
+	border: 0;
+	padding: 70px, 50px, 50px, 0;
+	margin: 0;
+	position: relative;
+	background: none;
+	cursor: none;
+	align-self: end;
+}
+
+.no-js .panel__item-close {
+	display: none;
+}
+
+.panel__item-close:focus {
+	outline: none;
+}
+
+/*---------------------------   Buttons --------------------------------*/
+
+
+.myButton {
+    grid-area:close;
+    position: relative;
+    cursor: none;
+	align-self: end;
+	border-radius:3px;
+	font-family:niveau-grotesk, sans-serif;
+	font-size:35px;
+	font-weight:bold;
+    color: #00D47E;
+	padding: 4px 8px;
+	text-decoration:none;
+}
+
+.myButton:hover {
+	background-color:#ffffff;
+    font-size:40px;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+/*--------------- Globe Orange ------------*/
+.myButton2 {
+	grid-area:close;
+    position: relative;
+    cursor: none;
+	align-self: end;
+	border-radius:3px;
+	font-family:niveau-grotesk, sans-serif;
+	font-size:35px;
+	font-weight:bold;
+    color: #FF6700;
+	padding: 4px 6px;
+	text-decoration:none;
+    
+
+}
+
+.myButton2:hover {
+	background-color:#ffffff;
+    font-size:40px;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+/*--------------- Globe Blue ------------*/
+.myButton3 {
+    grid-area:close;
+    position: relative;
+    cursor: none;
+	align-self: end;
+	border-radius:3px;
+	font-family:niveau-grotesk, sans-serif;
+	font-size:35px;
+	font-weight:bold;
+    color: #005AFC;
+	padding: 4px 8px;
+	text-decoration:none;
+    
+
+}
+
+.myButton3:hover {
+	background-color:#ffffff;
+    font-size:40px;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+
+
+/*--------------- Red Button ------------*/
+.myButton4 {
+    grid-area:close;
+    position: relative;
+    cursor: none;
+	align-self: end;
+	border-radius:3px;
+	font-family:niveau-grotesk, sans-serif;
+	font-size:35px;
+	font-weight:bold;
+    color: #c70c12;
+	padding: 4px 8px;
+	text-decoration:none;
+    
+
+}
+
+
+/*--------------- Yellow Button ------------*/
+.myButton5 {
+    grid-area:close;
+    position: relative;
+    cursor: none;
+	align-self: end;
+	border-radius:3px;
+	font-family:niveau-grotesk, sans-serif;
+	font-size:35px;
+	font-weight:bold;
+    color: #fdc806;
+	padding: 4px 8px;
+	text-decoration:none;
+    
+
+}
+
+.myButton3:hover {
+	background-color:#ffffff;
+    font-size:40px;
+}
+.myButton3:active {
+	position:relative;
+	top:1px;
+}
+/*---------------------- Button End --------------------*/
+
+@media only screen and (max-width: 767px) {
+    .wh_tile > div{
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 760px) {
+	
+	.panel__item {
+		grid-gap: 1rem;
+		grid-template-columns: auto minmax(0,1fr) auto;
+		grid-template-areas: 'image title title'
+			'image subtitle close';
+		grid-template-rows: 1fr auto;
+	}
+	
+	.no-js .panel__item {
+		margin: 0 0 5rem 0;
+		grid-template-areas: 'image title title'
+			'image subtitle subtitle';
+	}
+}
+
+@media screen and (min-width: 1170px) {
+	.panel__item {
+		grid-template-columns: auto minmax(0,1fr) 80px;
+		grid-template-areas: 'image title close'
+			'image subtitle close';
+		grid-template-rows: 1fr auto;
+	}
+
+	.panel__item-close {
+		align-self: unset;
+	}
+
+	.panel__item-close span {
+		display: none;
+	}
+
+	.panel__item-close::before,
+	.panel__item-close::after {
+		content: '';
+		width: 1px;
+		height: 60%;
+		background: currentColor;
+		position: absolute;
+		transform-origin: 50% 50%;
+		left: 70%;
+		top: 0;
+		transform: scale(1.15) rotate(32deg);
+	}
+
+	.panel__item-close::after {
+		transform: scale(1.15) rotate(-32deg);
+	}
+}
+
+.js .panel__item-title>*,
+.js .panel__item-subtitle>*,
+.js .panel__item-close {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.js .panel__item--open .panel__item-title>*,
+.js .panel__item--open .panel__item-subtitle>*,
+.js .panel__item--open .panel__item-close {
+	pointer-events: auto;
+}
+
+.js .panel__item--open {
+	z-index: 1000;
+}
+
+@media screen and (min-width: 767) {
+	.myTopButton{
+		text-align: right;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		max-width: calc(1450px - 4rem);
+		grid-template-columns: 95% 6% 5% 5%;
+		grid-template-rows: auto;
+		grid-template-areas: 'title links addon';
+	}
+
+
+
+	.page--header {
+	margin-bottom: 0px;
+    width: 100vw;
+    position: relative;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    background: var(--color-page);
+	backdrop-filter: blur(30px);
+    top:0;
+    z-index: 1;
+	}
+
+	.page--footer {
+		padding: 6rem 4rem 1.5rem;
+		border-radius: 8px 8px 0 0;
+		margin: 5vh auto 0;
+	}
+
+	.page__title {
+		grid-area: title;
+		margin: 0;
+	}
+
+	.page__links {
+		grid-area: links;
+		padding: 0;
+		justify-self: end;
+		align-self: end;
+	}
+
+
+	.page__addon {
+		margin: 0;
+		grid-area: addon;
+		justify-self: end;
+	}
+}
+
+@media (any-pointer:fine) {
+	.cursor {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: block;
+		pointer-events: none;
+		z-index: 1001;
+	}
+
+	.cursor__inner {
+		fill: var(--cursor-fill);
+		stroke: var(--cursor-stroke);
+		stroke-width: var(--cursor-stroke-width);
+		opacity: 0.7;
+	}
+
+	.no-js .cursor {
+		display: none;
+	}
+
+}
+
+
+
+/* ------------------------------------  Dealerships Container ---------------------------*/
+
+.dealerships-logos-container {
+    align-self: start;
+	width:93vw;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left:5%;
+    padding-right: 5%;
+}
+
+
+.dealerships-logos-container .logo {
+
+    display: flex;
+    overflow: hidden;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 10.9rem;
+    height: 10.9rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: .3rem;
+    border: 2px solid #b5b5b8;
+    border-radius: 5%;
+    background-color: #fff;
+}
+
+.logo:hover {
+	box-shadow:0.5rem  0.3rem 0.5rem rgba(55, 54, 54, 0.3);
+}
+
+.unitRow{
+	padding-left: 30px;
+}
+
+.unitTop{
+	padding-left: 30px;
+}

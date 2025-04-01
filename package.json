@@ -1,0 +1,31 @@
+{
+  "name": "simsciex",
+  "version": "1.0.0",
+  "description": "Project Updates",
+  "type": "module",
+
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "targets": {
+    "default": {
+      "engines": {
+        "browsers": "> 0.25%, not dead"
+      }
+    }
+  },
+  "author": "Estelle Gerber",
+  "license": "ISC",
+  "dependencies": {
+    "@types/imagesloaded": "^4.1.6",
+    "@types/splitting": "^1.0.6",
+    "gsap": "^3.12.5",
+    "imagesloaded": "^5.0.0",
+    "parcel": "^2.13.3",
+    "splitting": "^1.1.0"
+  },
+  "devDependencies": {
+    "svgo": "^3.3.2"
+  }
+}

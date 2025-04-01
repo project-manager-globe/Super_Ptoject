@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="901px" height="1080px" viewBox="0 0 901 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <circle id="path-1" cx="180" cy="180" r="180"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="8-copy-3" transform="translate(-1019.000000, 0.000000)">
+            <g id="Group" transform="translate(1019.000000, 0.000000)">
+                <path d="M180,0.5 C279.411255,0.5 360,81.088745 360,180.5 C360,279.911255 279.411255,360.5 180,360.5 Z" id="Combined-Shape" fill="#083651" transform="translate(270.000000, 180.500000) rotate(-360.000000) translate(-270.000000, -180.500000) "></path>
+                <path d="M179.511685,1079.98794 C130.492515,1079.19317 91,1039.20857 91,990 C91,940.294373 131.294373,900 181,900 L181,1080 Z" id="Combined-Shape" fill="#00D47E" transform="translate(136.000000, 990.000000) rotate(-360.000000) translate(-136.000000, -990.000000) "></path>
+                <path d="M631,900 C680.208571,900 720.193171,939.492515 720.987943,988.511685 L721,990 L721,1080 L541,1080 L541,900 L631,900 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(631.000000, 990.000000) rotate(-360.000000) translate(-631.000000, -990.000000) "></path>
+                <path d="M630.746479,-4.26325641e-13 C680.312091,-4.26325641e-13 720.492958,40.183977 720.492958,89.7534247 L720.488,90.246 L721,90.2465753 L721,180 L541.507042,180 L541.507,179.506 L541,179.506849 L541,-4.26325641e-13 L630.746479,-4.26325641e-13 Z" id="Combined-Shape-Copy-2" fill="#016B5C" transform="translate(631.000000, 90.000000) rotate(-630.000000) translate(-631.000000, -90.000000) "></path>
+                <path d="M720,359.5 L900,359.5 L900,449.5 C900,499.205627 859.705627,539.5 810,539.5 C760.294373,539.5 720,499.205627 720,449.5 L720,359.5 Z" id="Combined-Shape" fill="#083651" transform="translate(810.000000, 449.500000) rotate(-360.000000) translate(-810.000000, -449.500000) "></path>
+                <path d="M811,900 C860.705627,900 901,940.294373 901,990 L901,1080 L811,1080 C761.294373,1080 721,1039.70563 721,990 C721,940.294373 761.294373,900 811,900 Z" id="Combined-Shape" fill="#024E58" transform="translate(811.000000, 990.000000) rotate(-360.000000) translate(-811.000000, -990.000000) "></path>
+                <circle id="Oval-Copy-2" fill="#026270" transform="translate(180.000000, 540.500000) rotate(-360.000000) translate(-180.000000, -540.500000) " cx="180" cy="540.5" r="180"></circle>
+                <path d="M180.049986,360.5 C279.433635,360.5 360,441.088745 360,540.5 C360,639.911255 279.433635,720.5 180.049986,720.5 L180,720.5 L180,360.5 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(270.000000, 540.500000) rotate(-360.000000) translate(-270.000000, -540.500000) "></path>
+                <path d="M1.04998611,0.5 C100.433635,0.5 181,81.088745 181,180.5 C181,279.911255 100.433635,360.5 1.04998611,360.5 L1,360.5 L1,0.5 Z" id="Combined-Shape-Copy" fill="#00D47E" transform="translate(91.000000, 180.500000) rotate(-540.000000) translate(-91.000000, -180.500000) "></path>
+                <circle id="Oval-Copy-7" fill="#016B5C" transform="translate(451.000000, 630.500000) rotate(-360.000000) translate(-451.000000, -630.500000) " cx="451" cy="630.5" r="90"></circle>
+                <circle id="Oval-Copy-14" fill="#689197" transform="translate(811.000000, 90.500000) rotate(-360.000000) translate(-811.000000, -90.500000) " cx="811" cy="90.5" r="90"></circle>
+                <path d="M180,539.5 L180,450.5 L180.008,450.5 L180,449.5 C180,400.291429 219.492515,360.306829 268.511685,359.512057 L270,359.5 C319.705627,359.5 360,399.794373 360,449.5 C360,450.502526 359.983608,451.501223 359.951078,452.495839 L359.95,539.5 L180,539.5 Z" id="Combined-Shape" fill="#083651" transform="translate(270.000000, 449.500000) rotate(-360.000000) translate(-270.000000, -449.500000) "></path>
+                <path d="M541,540 L722.504178,540 C820.624046,540.547849 899.997214,620.926514 899.997214,720 L901,720 L901,900 L541,900 L541,540 Z" id="Combined-Shape" fill="#083651" transform="translate(721.000000, 720.000000) rotate(-360.000000) translate(-721.000000, -720.000000) "></path>
+                <circle id="Oval-Copy-9" fill="#FFFFFF" transform="translate(810.000000, 270.500000) rotate(-360.000000) translate(-810.000000, -270.500000) " cx="810" cy="270.5" r="90"></circle>
+                <path d="M540,180.5 C639.411255,180.5 720,260.422722 720,359.012397 C720,360.006006 719.991815,360.99772 719.975507,361.987475 L720,361.987603 L720,540.5 L360,540.5 L360,361.987603 L360.024493,361.987475 C360.008185,360.99772 360,360.006006 360,359.012397 C360,260.422722 440.588745,180.5 540,180.5 Z" id="Combined-Shape" fill="#00A26E" transform="translate(540.000000, 360.500000) rotate(-360.000000) translate(-540.000000, -360.500000) "></path>
+                <circle id="Mask" fill="#00D47E" transform="translate(540.000000, 360.500000) rotate(-360.000000) translate(-540.000000, -360.500000) " cx="540" cy="360.5" r="180"></circle>
+                <path d="M181,1080 L181,720 L361,720 C460.411255,720 541,800.588745 541,900 C541,999.411255 460.411255,1080 361,1080 L181,1080 Z" id="Combined-Shape" fill="#083651" transform="translate(361.000000, 900.000000) rotate(-360.000000) translate(-361.000000, -900.000000) "></path>
+                <g id="martin-sanchez-JQ0YVavMKLo-unsplash" transform="translate(181.000000, 720.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1" transform="translate(180.000000, 180.000000) rotate(-360.000000) translate(-180.000000, -180.000000) "></use>
+                    </mask>
+                    <use id="Mask" fill="#025A66" transform="translate(180.000000, 180.000000) rotate(-360.000000) translate(-180.000000, -180.000000) " xlink:href="#path-1"></use>
+                </g>
+                <path d="M178.511685,719.987943 C129.492515,719.193171 90,679.208571 90,630 C90,580.294373 130.294373,540 180,540 L180,720 Z" id="Combined-Shape-Copy-3" fill="#00D47E" transform="translate(135.000000, 630.000000) rotate(-360.000000) translate(-135.000000, -630.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

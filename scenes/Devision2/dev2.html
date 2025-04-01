@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Super Project App</title>
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="A Landing Page for Software Systems and Guide"
+    />
+    <meta name="keywords" content="animation, letters, typography, scattered, distributed, layout, css, javascript" />
+    <meta name="Estelle" content="Tutoristic" />
+		<script>document.documentElement.className="js", type="module";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<link rel="stylesheet" href="https://use.typekit.net/nbe0mhe.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="../index.css" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+ <link rel="stylesheet" type="text/css" href="../light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>          
+        
+  	    
+    <style>
+
+.bgimg {
+ 
+ height: 100%;
+ background-position: center;
+ background-size: cover;
+ position: relative;
+ color: white;
+ font-family: "Courier New", Courier, monospace;
+ font-size: 25px;
+}
+           
+           .sidenav {
+             height: 100%;
+             width: 0;
+             position: fixed;
+             z-index: -1;
+             top: 8%;
+             left: 0;
+             background-color: black;
+             background-image: url("./dev2Imgs/lines.jpg");
+             overflow-x: hidden;
+             transition: 0.5s;
+             padding-top: 60px;
+             text-align:left;
+             color: white;
+             
+           }
+           
+           .sidenav a {
+             padding: 8px 8px 8px 32px;
+             text-decoration: none;
+             font-size: 25px;
+             color: rgb(189, 186, 186);
+             display: block;
+             transition: 0.3s;
+           
+           }
+
+           .sidenav a:hover{
+             color: #f1f1f1;
+           }
+
+ 
+           
+
+           
+           .sidenav .closebtn {
+             position: absolute;
+             top: 0;
+             right: 25px;
+             font-size: 36px;
+             margin-left: 50px;
+           }
+           
+           @media screen and (max-height: 450px) {
+             .sidenav {padding-top: 15px;}
+             .sidenav a {font-size: 18px;}
+           }
+           </style>
+
+     </head>
+       
+       
+       
+     <header class="navbar navbar-default wh_header">
+       <div class="topcontainer">
+  
+
+             
+                     <div class="bg-primary">
+                       <nav class="navbar  navbar-expand-md fixed-top navbar-dark">
+        
+                        <a class="navbar-brand" href="/" ><img src="./dev2Imgs/ictglobe.png"  height="30px" alt="ICTGlobe"> </a>          
+                        <div id="mySidenav" class="sidenav">
+
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="bgimg">
+                                <div class="topleft" >
+                                  <p style="color: white;
+                                  font-size: 30px; padding-right: 70%;"><strong>Supergroup Dealerhips:</strong></p>
+                                          <div>
+                                                <table class="sideTable">
+                                                    <tbody>
+                                                        <tr >
+                                                            <td ><strong>Name</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Reporting Name</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Devision</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Voice</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Province</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>City</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Suburb</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Status</strong></td>
+                                                            <td style="padding-left: 50px;"><strong></td>
+                                                        </tr>
+                                                      <br>
+                                                        <tr>
+                                                            <td><strong>S1263</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Casseys Benoni</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Lakeside Mall, Benoni</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1264</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Casseys Springs</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Springs</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                            <td></td>
+                                                         
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1272</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>General Motors/Tommy Martin Eagle Canyon</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Honeydew 2040</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1285</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Toyota The Glen</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Oakdene</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1294</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Grand Central Motors</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Midrand</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1321</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Basil Green - Nissan</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Edenvale</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1325</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Land Rover | Jaguae East Rand</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Boksburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1334</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Northwest Nissan - Ontdekkers</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Roodepoort</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><strong>S1361</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Northwest Nissan - Ontdekkers</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Roodepoort</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+
+                                                    
+                                                        <tr>
+                                                            <td><strong>S1416</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Volvo East Rand</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Boksburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1420</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Arnold Chatz Constantia</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Constantia Kloof</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1430</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Suzuki Edenvale</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Modderfontein</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><strong>S1572</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Nash Nissan</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Alberton</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1709</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Haval Northcliff</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Johannesburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Northcliff</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1501</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Suzuki Bruma</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Deelerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Kensington</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Eastgate</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1757</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>FAW Trucks</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Roodepoort</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Stormill</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1569</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>CJD East Rand</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Boksburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Bardene Ext. 18</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>  
+                                                        <tr>
+                                                            <td><strong>S1585</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Suzuki Boksburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Boksburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>No Link</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>                                                      
+                                                        <tr>
+                                                            <td><strong>S2090</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Mercedes-Benz Vereeniging</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>No</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Gauteng</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Vereeniging</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1795</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Mercedes-Benz Harrismith</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>No</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Free State</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Harrismith</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Harrysmith</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><strong>S1352</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Nelspruit LandRover | Jaguar | Volvo</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Mpumalanga</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Nelspruit</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Riverside Park</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><strong>S1391</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Volkswagen Brits</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>North West</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Brits</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Brits</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1323</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Lionel Motors Rustenburg / SGRP-0121 Renault </strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>North West</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Rustenburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Waterval East X6</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1354</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>VW & Audi Rustenburg </strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>North West</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Rustenburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Waterval East</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S1400</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Leons Motors Rustenburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>North West</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Rustenburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Rustenburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S3500</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Limpopo Land Rover | Jaguar | Volvo</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>North West</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Rustenburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Rustenburg</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S2084</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Mercedes-Benz Eikestad</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Western Cape</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Cape Town</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Stellenbosch</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S2085</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Mercedes-Benz V&A</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Western Cape</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Cape Town</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Victoria & Alfred Waterfront</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S2088</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>SMH Paarl</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Western Cape</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Cape Town</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Zandwyk Park</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S2091</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Mercedes-Benz Kraaifontein</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Western Cape</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Cape Town</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Kraaifontein Industria</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S2092</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Mercedes-Benz Constantia</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Western Cape</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Cape Town</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Claremont</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S2080</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Mercedes-Benz Century City / CJD</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Western Cape</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Century City</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Century Boulevard</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>S2087</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Orbit Boland</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Dealerships</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Yes</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Western Cape</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Worcester</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Worcester</strong></td>
+                                                            <td style="padding-left: 50px;"><strong>Not Started</strong></td>
+                                                            <td style="padding-left: 20px;"><a href="" >View</a></td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>  
+                                </div>
+                               
+                                <div class="middle">
+                                  <h1 style="color: white; font-size: 40px; ">Estimated Time Remaining</h1>
+                               
+                                  <p id="demo" style="color: white;
+                                  font-size: 30px; font-weight: 800;"></p>
+                                </div>
+                              </div>
+                         </div>
+             				 <script>
+                                function openNav() {
+                                  document.getElementById("mySidenav").style.width = "100%";
+                                }
+                                
+                                function closeNav() {
+                                  document.getElementById("mySidenav").style.width = "0";
+                                }
+        
+                                // Set the date we're counting down to
+        var countDownDate = new Date("November 29, 2024 23:59:59").getTime();
+        
+        // Update the count down every 1 second
+        var countdownfunction = setInterval(function() {
+        
+          // Get todays date and time
+          var now = new Date().getTime();
+          
+          // Find the distance between now an the count down date
+          var distance = countDownDate - now;
+          
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours "
+          + minutes + "m " + seconds + "s ";
+          
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(countdownfunction);
+            document.getElementById("demo").innerHTML = 'GATHERING INFORMATION...<br>Woops, seems like we are still busy :( <br>';
+          }
+        }, 1000);
+                            
+                            </script>
+                     <div class ="collapse navbar-collapse" id="navbarTogglerDemo02">
+                         <ul id="mySidenav"  class="navbar-nav ml-auto">
+        
+                            <li id="mySidenav">
+                                <span class="myTopButton" onclick="openNav()"> Sites</span>
+                            </li>
+                          
+                             <li class="nav-item">
+                              <a href="../Devision1/dev1.html"  class="myTopButton">Devision 1</a>
+                            </li>
+  
+                            <li class="nav-item">
+                              <a href="./dev2.html"  class="myTopButton">Devision 2</a>
+                          </li>
+  
+                          <li class="nav-item">
+                            <a href=""  class="myTopButton">Fleet</a>
+                        </li>
+  
+                            </ul>
+        
+                            <script>
+                                    
+                            </script>
+                                      </nav>
+                                    </div>
+                                </header>
+
+<body>
+    <h2 class="content__title content__title" style="padding-top: 80px; padding-bottom: 30px; color: rgb(255, 21, 21);">Supergroup Supply Chain Businesses</h2>
+ 
+    <h4 style="padding-left: 80px;"><strong>Transportation</strong></h4>
+    <div class="dealerships-logos-container">
+      <a title="Freight" href="\" class="logo" data-province="gauteng">
+          <img decoding="async" src="./dev2Imgs/lines.jpg" style="width: 140px;" alt="Freight">
+      </a>
+
+  
+      <a title="Bulk" href="." class="logo" data-province="gauteng">
+          <img decoding="async" src="./dev2Imgs/lines.jpg"  style="width: 140px;" alt="Bulk">
+      </a>
+
+  
+      <a title="Coal" href="." class="logo" data-province="northWest">
+          <img decoding="async" src="./dev2Imgs/lines.jpg" style="width: 140px;" alt="Coal">
+      </a>
+      <a title="Legend Logistics" href="" class="logo"  data-province="gauteng">
+        <img decoding="async" src="./dev2Imgs/lines.jpg"  style="width: 140px;" alt="Legend Logistics">
+    </a>
+    </div>
+    <p style="padding-left: 80px;">The following businesses was not included in the above list: </p>
+    <ul style="padding-left: 110px;">
+        <li>Legend Logistics</li>
+        <li >Lieben Logistics</li>
+        <li >Baleka Freight</li>
+    </ul>
+
+      <br>
+      <h4  style="padding-left: 80px;"><strong>Warehousing and Distribution</strong></h4>
+      <div class="dealerships-logos-container">
+      <a title="Consumers" href="" class="logo"  data-province="gauteng">
+          <img decoding="async" src="./dev2Imgs/lines.jpg"  style="width: 160px;" alt="Consumers">
+      </a>
+
+  
+      <a title="Convenience" href="." class="logo" data-province="gauteng">
+          <img decoding="async" src="./dev2Imgs/lines.jpg"  style="width: 160px;" alt="Convenience">
+     
+      </a>
+
+  
+      <a title="Digistics" href="." class="logo"  data-province="gauteng,northWest">
+          <img decoding="async" src="./dev2Imgs/lines.jpg" style="width: 120px;" alt="Digistics">
+      </a>
+
+  
+      <a title="Mobility" href="" class="logo"  data-province="westernCape">
+          <img decoding="async" src="./dev2Imgs/lines.jpg"   style="width: 160px;" alt="Mobility">
+      </a>
+
+      </div>
+       
+      <br>
+      <h4  style="padding-left: 80px;"><strong>Courier Services</strong></h4>
+      <div class="dealerships-logos-container">
+    
+      <!--<a title="Response" href="." class="logo"  data-province="gauteng">
+          <img decoding="async" src="./imagesS/response-logo.png" style="width: 160px;" alt="Response">
+      </a>
+
+  
+      <a title="RWS" href="" class="logo"  data-province="gauteng">
+          <img decoding="async" src="./imagesS/RWS.jpeg" style="width: 160px;" alt="RWS">
+      </a>
+
+  
+      <a title="MDS" href="" class="logo"  data-province="gauteng">
+          <img decoding="async" src="./imagesS/MDS.jpeg" style="width: 160px;" alt="MDS">
+      </a>
+
+      <a title="Cargo Works" href="" class="logo"  data-province="gauteng">
+        <img decoding="async" src="./imagesS/CargoWorks.png" style="width: 160px;" alt="Cargo Works">
+    </a>
+  </div>
+  <div class="dealerships-logos-container">
+
+  
+      <a title="Zultrans" href="https://www.supergroupdealerships.co.za/our-dealers" class="logo"  data-province="gauteng">
+          <img decoding="async" src="./imagesS/zultrans.jpg" style="width: 160px;" alt="Zultrans">
+      </a>
+
+  
+      <a title="Right Side Up" href="https://www.supergroupdealerships.co.za/our-dealers" class="logo"  data-province="gauteng,mpumalanga,limpopo">
+          <img decoding="async" src="./imagesS/rightUp.jpeg" style="width: 160px;"  alt="Right Side Up">
+      </a>-->
+      <a title="Zultrans" href="https://www.supergroupdealerships.co.za/our-dealers" class="logo"  data-province="gauteng">
+        <img decoding="async" src="./dev2Imgs/lines.jpg"  style="width: 160px;" alt="Zultrans">
+    </a>
+    </div>
+
+    <p style="padding-left: 80px;">The following businesses was not included in the above list: </p>
+    <ul style="padding-left: 110px;">
+        <li>Response</li>
+        <li >RWS</li>
+        <li >MDS</li>
+        <li>Cargo Works</li>
+        <li>Right Side Up Distribution</li>
+    </ul>
+    <br>
+    <h4  style="padding-left: 80px;"><strong>Vehicle Rentals & Passenger Transport</strong></h4>
+    <div class="dealerships-logos-container">
+        <a title="Super Rent" href="https://www.supergroupdealerships.co.za/our-dealers" class="logo"  data-province="gauteng">
+            <img decoding="async" src="./dev2Imgs/lines.jpg" style="width: 160px;"  alt="Super Rent">
+        </a>
+  
+  
+      <a title="Luxliner" href="" class="logo"  data-province="gauteng,northWest">
+          <img decoding="async" src="./dev2Imgs/lines.jpg"  style="width: 160px;"  alt="Luxliner">
+      </a>
+    </div>
+    <br>
+    <h4  style="padding-left: 80px;"><strong>Supply Chain Technologies</strong></h4>
+    <div class="dealerships-logos-container">
+  
+      <a title="VSC" href="" class="logo"  data-province="gauteng">
+          <img decoding="async" src="./dev2Imgs/lines.jpg" style="width: 160px;"  alt="VCS">
+      </a>
+
+  
+      <a title="Rentrak" href="" class="logo"  data-province="gauteng,northWest">
+        <img decoding="async" src="./dev2Imgs/lines.jpg"  style="width: 170px;"  alt="VCS">
+    </a>
+  </div>
+  <br>
+  <h4  style="padding-left: 80px;">Services</h4>
+  <div class="dealerships-logos-container">
+
+      <a title="Trade Finance" href="" class="logo" data-province="gauteng,westernCape">
+        <img decoding="async" src="./dev2Imgs/lines.jpg"  style="width: 170px;"  alt="Trade Finance">
+      </a>
+
+  
+      <a title="Gateway" href="" class="logo"  data-province="westernCape">
+        <img decoding="async" src="./dev2Imgs/lines.jpg"  style="width: 170px;"  alt="Gateway">
+
+      </a>
+
+  
+      <a title="RSC" href="" class="logo"  data-province="westernCape">
+        <img decoding="async" src="./dev2Imgs/lines.jpg"  style="width: 170px;"  alt="VCS">
+      </a>
+      <br>
+</div>
+
+
+<br><br>
+</body>
+</html>
+  

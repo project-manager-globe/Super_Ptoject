@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fjalla+One&family=Staatliches&display=swap');
+.wh_publication_title > a {
+    color: #646464;
+    font-family:"Concert One";
+    font-size: 1.85em;
+}
+
+.wh_top_menu > ul > li span a{
+    
+     color: #026270;
+     font-family:"Concert One";   
+}
+
+.wh_tile_title a{
+     color: #edf1f4;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-size: large;
+     font-weight: 600;
+}
+
+.wh_tile {
+    margin-top: 35px;
+    border-radius: .5em;
+    background-color: #026270;     
+}
+
+
+.wh_tile_shortdesc{
+     text-align: center;
+     color: #edf1f4;
+     font-family:Verdana, Geneva, Tahoma, sans-serif; 
+     font-size: large;
+}
+
+.wh_tile_shortdesc2{
+    text-align: center;
+    color: #edf1f4;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size:medium;
+}
+
+.wh_indexterms_link a{
+    color:#edf1f4;
+}
+
+.wh_search_button{
+    color: #edf1f4;
+    background-color: #689197;
+}
+
+.wh_search_input{
+    display: block;
+    padding: 8em;
+    margin: 0;
+    background: url('img/bub5.png') repeat;
+    background-size:auto ;
+    box-shadow: 0px 7px 21px -12px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 767px){
+    .wh_search_input{
+    padding: .8em;
+    margin: 0;
+    background: url('img/bub5.png') repeat;
+    background-size:auto ;
+    box-shadow: 0px 7px 21px -12px rgba(0, 0, 0, 0.3);
+    }
+}
+  
+
