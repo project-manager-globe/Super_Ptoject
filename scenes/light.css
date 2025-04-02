@@ -19,12 +19,11 @@ body {
   --color-page: #717171;
   --color-text: #f3f3f3;
   --color-bg: #717171;
-  --color-link:#717171;
+  --color-link:f3f3f3;
   --color-btn:#f3f3f3;
-  --color-link-hover: #0137FB;
+  --color-link-hover: #717171;
   --aspect-ratio: 1/1.5;
   --imgwidthmax: 700px;
-  --imgheightmax: 700px;
   --size-title: 5rem;
   --size-word: 4rem;
   --size-note:9rem;
@@ -37,6 +36,23 @@ body {
   z-index: 1000;
 }
 
+.structure{
+  background-image: url("https://transparenttextures.com/patterns/scribble-light.png");
+	width: 100%vw;
+  background-color: white;
+  font-family: niveau-grotesk, sans-serif;
+  margin: 0;
+}
+
+
+.page__title2 {
+  grid-area: header;
+  margin: 0 0 0.5rem;
+  font-family: Fredericka the Great, sans-serif;
+  font-size: var(--size-title);
+  font-weight: 200;
+  color: #444040;
+}
 /* --------------------------- NAVBAR ---------------------------------*/
 .bgimg {
 
@@ -93,10 +109,10 @@ body {
  * 
  */
  .wh_footer{
-    text-align: center;
-    padding: 0.4em;
-	font-size: 15px;
-	width: auto;
+  text-align: center;
+  padding: 0.4em;
+font-size: 15px;
+
 }
 
 
@@ -358,8 +374,8 @@ a:focus {
 
 .content__item-imgwrap {
   position: relative;
-  --imgwidth: 100%;
-  --imgheight: 100%;
+  --imgwidth: 90%;
+  --imgheight: 90%;
   margin: 0 auto;
   grid-area: 1 / 1 / 3 / 3;
   overflow: hidden;
@@ -385,7 +401,7 @@ a:focus {
   height: 100%;
   position: absolute;
   background-size: cover;
-  background-position: 70% 5%;
+  background-position: 50% 0%;
   will-change: transform;
   opacity: 0.7;
 }
@@ -406,7 +422,7 @@ a:focus {
 
 .content__item-title {
   position: relative;
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   padding: 0 3vw;
   margin: calc(var(--size-title) * -1 / 2) 0 0 0;
   align-self: start;
@@ -467,7 +483,7 @@ a:focus {
 
 .content__item-description {
   grid-area: 3 / 3 / 3 / 3;
-  width: 80%;
+  width: 70%;
   position: relative;
   margin: 0;
   padding: 1rem 0 0 0;
@@ -542,6 +558,7 @@ a:focus {
     grid-area: 1 / 1 / 4 / 2;
   }
 }
+
 
 
 
